@@ -166,7 +166,7 @@ If your task requires even more granular control over the policy architecture, y
           with tf.variable_scope("model", reuse=reuse):
               activ = tf.nn.relu
 
-              extracted_features = nature_cnn(self.self.processed_obs, **kwargs)
+              extracted_features = nature_cnn(self.processed_obs, **kwargs)
               extracted_features = tf.layers.flatten(extracted_features)
 
               pi_h = extracted_features
